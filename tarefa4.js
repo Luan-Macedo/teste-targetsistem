@@ -1,27 +1,17 @@
-const faturamentoPorEstado = {
-    SP: 67836.43,
-    RJ: 36678.66,
-    MG: 29229.88,
-    ES: 27165.48,
-    Outros: 19849.53
-};
+a) números ímpares
+Resposta: 9
 
-const faturamentoTotal = Object.values(faturamentoPorEstado).reduce((acumulador, valor) => acumulador + valor, 0);
+b) cada número é o dobro do anterior
+Resposta: 128
 
-function calcularPercentuais(faturamentoPorEstado, faturamentoTotal) {
-    const percentuais = {};
+c) são quadrados perfeitos
+Resposta: 49
 
-    for (let estado in faturamentoPorEstado) {
-        let percentual = (faturamentoPorEstado[estado] / faturamentoTotal) * 100;
-        percentuais[estado] = percentual.toFixed(2);
-    }
+d) são quadrados perfeitos de números pares
+Resposta: 100
 
-    return percentuais;
-}
+e) é a sequência de Fibonacci
+Resposta: 13
 
-const percentuaisPorEstado = calcularPercentuais(faturamentoPorEstado, faturamentoTotal);
-
-console.log("Percentual de representação por estado:");
-for (let estado in percentuaisPorEstado) {
-    console.log(`${estado}: ${percentuaisPorEstado[estado]}%`);
-}
+f) a sequência alterna entre saltos maiores e incrementos de 1
+Resposta: 20
